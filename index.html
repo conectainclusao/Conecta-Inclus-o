@@ -5,108 +5,148 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Conecta Inclusão</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#f4f6f9;color:#1a1a1a;line-height:1.6}
-nav{background:#0f204b;padding:15px 40px;display:flex;justify-content:space-between;align-items:center}
-nav h2{color:#fff}
-nav a{color:#fff;text-decoration:none;margin-left:25px;font-weight:500}
-header{background:linear-gradient(rgba(15,32,75,0.85),rgba(15,32,75,0.85)),url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');background-size:cover;background-position:center;color:#fff;text-align:center;padding:120px 20px}
-header h1{font-size:48px;margin-bottom:20px}
-header p{max-width:800px;margin:auto;font-size:20px}
-.btn{display:inline-block;margin:20px 10px;padding:14px 30px;border-radius:6px;font-weight:600;text-decoration:none}
-.btn-primary{background:#f37320;color:#fff}
-.btn-secondary{background:#fff;color:#0f204b}
-section{padding:80px 40px;max-width:1200px;margin:auto}
-h2{color:#0f204b;margin-bottom:30px;font-size:32px;text-align:center}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
-.card{background:#fff;padding:30px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
-.card h3{color:#0f204b;margin-bottom:15px}
-.highlight{background:#0f204b;color:#fff;text-align:center;padding:70px 20px}
-.highlight h2{color:#fff}
-.about{background:#fff}
-.about img{width:100%;border-radius:12px;margin-bottom:25px}
-footer{background:#0f204b;color:#fff;text-align:center;padding:40px 20px;margin-top:40px}
+body{font-family:'Poppins',sans-serif;background:#0c1b2a;color:#fff}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px;
+background:linear-gradient(rgba(12,27,42,0.92),rgba(12,27,42,0.92)),
+url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:42px;
+max-width:900px;
+margin-bottom:20px;
+font-weight:700;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+margin-bottom:40px;
+color:#cfd8e3;
+}
+
+.buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+padding:15px 35px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn-empresa{
+background:#f37320;
+color:#fff;
+}
+
+.btn-empresa:hover{
+background:#ff8c42;
+}
+
+.btn-profissional{
+background:#1abc9c;
+color:#fff;
+}
+
+.btn-profissional:hover{
+background:#28d7b5;
+}
+
+.counter-section{
+background:#ffffff;
+color:#0c1b2a;
+padding:70px 20px;
+text-align:center;
+}
+
+.counter-grid{
+display:flex;
+justify-content:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.counter h2{
+font-size:38px;
+color:#0c1b2a;
+}
+
+.counter p{
+margin-top:10px;
+font-weight:500;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:#fff;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+
 </style>
 </head>
+
 <body>
 
-<nav>
-<h2>Conecta Inclusão</h2>
-<div>
-<a href="#empresas">Empresas</a>
-<a href="#profissionais">Profissionais</a>
-<a href="#sobre">Sobre</a>
-<a href="cadastro.html">Cadastro</a>
-</div>
-</nav>
+<section class="hero">
+<h1>Inclusão estratégica que gera resultado real.</h1>
+<p>Consultoria e conexão entre empresas e talentos diversos com foco em trabalho remoto, estrutura e impacto ESG.</p>
 
-<header>
-<h1>Conecta Inclusão é uma consultoria e plataforma que conecta empresas a talentos diversos, com estratégia, método e impacto ESG.</h1>
-<p>Integramos estratégia, inclusão e performance empresarial em um modelo estruturado e sustentável.</p>
-<a href="#empresas" class="btn btn-primary">Sou Empresa</a>
-<a href="#profissionais" class="btn btn-secondary">Sou Profissional</a>
-</header>
-
-<section id="empresas">
-<h2>Para Empresas</h2>
-<div class="grid">
-<div class="card">
-<h3>Desafios Reais</h3>
-<p>Dificuldade em estruturar diversidade, cumprir metas ESG e encontrar talentos qualificados.</p>
-</div>
-<div class="card">
-<h3>Nossa Solução</h3>
-<p>Banco de talentos inclusivo, diagnóstico estratégico e apoio na implementação de políticas alinhadas ao ESG.</p>
-</div>
-<div class="card">
-<h3>Resultado</h3>
-<p>Redução de riscos, fortalecimento da marca empregadora e equipes mais inovadoras e produtivas.</p>
-</div>
+<div class="buttons">
+<a href="empresa.html" class="btn btn-empresa">Sou Empresa</a>
+<a href="profissional.html" class="btn btn-profissional">Sou Profissional</a>
 </div>
 </section>
 
-<section id="profissionais" style="background:#eef1f7">
-<h2>Para Profissionais</h2>
-<div class="grid">
-<div class="card">
-<h3>Quem Atendemos</h3>
-<p>PCD, mães solo, 50+, cuidadores e profissionais que buscam trabalho remoto ou híbrido.</p>
-</div>
-<div class="card">
-<h3>Oportunidade Real</h3>
-<p>Conectamos você a empresas comprometidas com inclusão estruturada e crescimento sustentável.</p>
-</div>
-<div class="card">
-<h3>Preparação</h3>
-<p>Orientação estratégica para aumentar suas chances de contratação.</p>
-</div>
+<section class="counter-section">
+<div class="counter-grid">
+
+<div class="counter">
+<h2>12</h2>
+<p>Empresas Conectadas</p>
 </div>
 
-<div style="text-align:center;margin-top:40px;">
-<a href="cadastro.html" class="btn btn-primary">Quero me cadastrar</a>
+<div class="counter">
+<h2>186</h2>
+<p>Profissionais no Banco</p>
 </div>
 
+<div class="counter">
+<h2>9</h2>
+<p>Estruturas Organizacionais Desenvolvidas</p>
+</div>
+
+</div>
 </section>
 
-<section id="sobre" class="about">
-<h2>Sobre a Conecta Inclusão</h2>
-<img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="Reunião corporativa inclusiva">
-<p>A Conecta Inclusão nasceu para transformar inclusão em estratégia estruturada. Atuamos como ponte entre talentos invisibilizados e empresas que desejam crescer com responsabilidade social e impacto mensurável.</p>
-<br>
-<p>Acreditamos que diversidade, quando organizada com método e propósito, gera produtividade, inovação e vantagem competitiva.</p>
-</section>
-
-<section class="highlight">
-<h2>Transforme Inclusão em Resultado</h2>
-<p>Impacto social mensurável. Governança fortalecida. Crescimento sustentável.</p>
-<a href="cadastro.html" class="btn btn-primary">Cadastre-se</a>
-</section>
-
-<footer>
-<p>© 2026 Conecta Inclusão | Inclusão com estratégia, impacto e transformação.</p>
-</footer>
+<a class="whatsapp" href="https://wa.me/55SEUNUMEROAQUI?text=Olá,%20vim%20pelo%20site%20da%20Conecta%20Inclusão%20e%20quero%20mais%20informações." target="_blank">
+WhatsApp
+</a>
 
 </body>
 </html>
-
