@@ -3,96 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Conecta Inclusão</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#0c1b2a;color:#fff}
+
+body{
+font-family:'Inter',sans-serif;
+background:#0e1116;
+color:#eaeaea;
+line-height:1.6;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(14,17,22,0.85);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+nav a{
+color:#cfcfcf;
+text-decoration:none;
+margin-left:30px;
+font-size:14px;
+letter-spacing:1px;
+text-transform:uppercase;
+}
 
 .hero{
 min-height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
-align-items:center;
-text-align:center;
-padding:40px;
-background:linear-gradient(rgba(12,27,42,0.92),rgba(12,27,42,0.92)),
-url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+padding:140px 60px 80px 60px;
+background:linear-gradient(rgba(14,17,22,0.85),rgba(14,17,22,0.85)),
+url('https://images.unsplash.com/photo-1552664730-d307ca884978');
 background-size:cover;
 background-position:center;
 }
 
 .hero h1{
-font-size:42px;
+font-family:'Playfair Display',serif;
+font-size:46px;
 max-width:900px;
-margin-bottom:20px;
-font-weight:700;
+margin-bottom:30px;
+color:#ffffff;
 }
 
 .hero p{
-font-size:20px;
-max-width:700px;
+max-width:750px;
+font-size:18px;
+color:#c9c9c9;
 margin-bottom:40px;
-color:#cfd8e3;
+}
+
+.section{
+padding:100px 60px;
+background:#ffffff;
+color:#1a1a1a;
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:34px;
+margin-bottom:30px;
+color:#0e1116;
+}
+
+.section p{
+max-width:900px;
+margin-bottom:20px;
+font-size:17px;
 }
 
 .buttons{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-justify-content:center;
+margin-top:40px;
 }
 
 .btn{
+display:inline-block;
 padding:15px 35px;
-border-radius:6px;
+margin-right:20px;
+border-radius:4px;
 text-decoration:none;
 font-weight:600;
-transition:0.3s;
+letter-spacing:0.5px;
 }
 
 .btn-empresa{
-background:#f37320;
+background:#1f3a5f;
 color:#fff;
-}
-
-.btn-empresa:hover{
-background:#ff8c42;
 }
 
 .btn-profissional{
-background:#1abc9c;
+background:#8c6a3e;
 color:#fff;
-}
-
-.btn-profissional:hover{
-background:#28d7b5;
-}
-
-.counter-section{
-background:#ffffff;
-color:#0c1b2a;
-padding:70px 20px;
-text-align:center;
-}
-
-.counter-grid{
-display:flex;
-justify-content:center;
-gap:60px;
-flex-wrap:wrap;
-}
-
-.counter h2{
-font-size:38px;
-color:#0c1b2a;
-}
-
-.counter p{
-margin-top:10px;
-font-weight:500;
 }
 
 .whatsapp{
@@ -101,50 +116,72 @@ bottom:20px;
 right:20px;
 background:#25d366;
 color:#fff;
-padding:15px 20px;
+padding:14px 18px;
 border-radius:50px;
 text-decoration:none;
-font-weight:600;
-box-shadow:0 4px 15px rgba(0,0,0,0.3);
+font-size:14px;
+box-shadow:0 4px 12px rgba(0,0,0,0.4);
 }
 
+footer{
+padding:40px 60px;
+background:#0e1116;
+color:#aaa;
+font-size:14px;
+}
 </style>
 </head>
 
 <body>
 
+<nav>
+<div style="font-weight:600;letter-spacing:1px;">Conecta Inclusão</div>
+<div>
+<a href="#">Início</a>
+<a href="sobre.html">Sobre</a>
+</div>
+</nav>
+
 <section class="hero">
-<h1>Inclusão estratégica que gera resultado real.</h1>
-<p>Consultoria e conexão entre empresas e talentos diversos com foco em trabalho remoto, estrutura e impacto ESG.</p>
+<h1>Inclusão estruturada para organizações que querem crescer com responsabilidade e visão estratégica.</h1>
+
+<p>
+O Conecta Inclusão estrutura diversidade e inclusão com método e visão estratégica, fortalecendo governança, ampliando o acesso a talentos e consolidando impacto ESG nas organizações.
+</p>
+
+<p>
+Atuamos como consultoria estratégica, organizando processos, diretrizes e políticas inclusivas que geram crescimento sustentável, posicionamento institucional sólido e eficiência na conexão com profissionais qualificados.
+</p>
+</section>
+
+<section class="section">
+
+<h2>Por que contratar o Conecta Inclusão?</h2>
+
+<p>
+Empresas que buscam crescimento consistente entendem que diversidade e inclusão não devem ser improvisadas. Estruturar esse processo com método reduz riscos, fortalece governança e amplia a capacidade de inovação.
+</p>
+
+<p>
+A consultoria atua na análise da estrutura atual da organização, identificação de oportunidades estratégicas e implementação de diretrizes alinhadas aos princípios de responsabilidade social e governança corporativa.
+</p>
+
+<p>
+Além da estruturação estratégica, o Conecta Inclusão conecta empresas a talentos diversos por meio de modelos organizados de contratação — incluindo possibilidades remotas e híbridas quando alinhadas à estratégia empresarial.
+</p>
 
 <div class="buttons">
 <a href="empresa.html" class="btn btn-empresa">Sou Empresa</a>
 <a href="profissional.html" class="btn btn-profissional">Sou Profissional</a>
 </div>
+
 </section>
 
-<section class="counter-section">
-<div class="counter-grid">
+<footer>
+© 2026 Conecta Inclusão | Diversidade, governança e estratégia organizacional.
+</footer>
 
-<div class="counter">
-<h2>12</h2>
-<p>Empresas Conectadas</p>
-</div>
-
-<div class="counter">
-<h2>186</h2>
-<p>Profissionais no Banco</p>
-</div>
-
-<div class="counter">
-<h2>9</h2>
-<p>Estruturas Organizacionais Desenvolvidas</p>
-</div>
-
-</div>
-</section>
-
-<a class="whatsapp" href="https://wa.me/55SEUNUMEROAQUI?text=Olá,%20vim%20pelo%20site%20da%20Conecta%20Inclusão%20e%20quero%20mais%20informações." target="_blank">
+<a class="whatsapp" href="https://wa.me/55SEUNUMEROAQUI?text=Olá,%20vim%20pelo%20site%20da%20Conecta%20Inclusão%20e%20gostaria%20de%20mais%20informações." target="_blank">
 WhatsApp
 </a>
 
