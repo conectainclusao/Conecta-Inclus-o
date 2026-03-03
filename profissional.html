@@ -4,57 +4,83 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Conecta Inclusão | Profissionais</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#eef6f4;color:#1a1a1a}
 
-header{
-background:#1abc9c;
-color:#fff;
-padding:80px 20px;
-text-align:center;
+body{
+font-family:'Inter',sans-serif;
+background:#0e1116;
+color:#eaeaea;
+line-height:1.7;
 }
 
-header h1{
-font-size:36px;
-margin-bottom:20px;
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(14,17,22,0.9);
 }
 
-header p{
-font-size:18px;
+nav a{
+color:#cfcfcf;
+text-decoration:none;
+margin-left:30px;
+font-size:14px;
+letter-spacing:1px;
+text-transform:uppercase;
+}
+
+.hero{
+min-height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:140px 60px 80px 60px;
+background:linear-gradient(rgba(14,17,22,0.85),rgba(14,17,22,0.85)),
+url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:40px;
+margin-bottom:25px;
+}
+
+.hero p{
 max-width:800px;
-margin:auto;
+font-size:18px;
+color:#c9c9c9;
 }
 
-section{
-padding:70px 20px;
-max-width:1100px;
-margin:auto;
+.section{
+padding:100px 60px;
+background:#ffffff;
+color:#1a1a1a;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:32px;
+margin-bottom:30px;
 }
 
-.card{
-background:#fff;
-padding:30px;
-border-radius:10px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
+.section p{
+max-width:900px;
+margin-bottom:20px;
+font-size:17px;
 }
 
-.card h3{
-margin-bottom:15px;
-}
-
-.form-section{
-background:#fff;
-padding:60px 20px;
-text-align:center;
+.form-area{
+margin-top:50px;
 }
 
 .whatsapp{
@@ -63,51 +89,59 @@ bottom:20px;
 right:20px;
 background:#25d366;
 color:#fff;
-padding:15px 20px;
+padding:14px 18px;
 border-radius:50px;
 text-decoration:none;
-font-weight:600;
-box-shadow:0 4px 15px rgba(0,0,0,0.3);
+font-size:14px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Seu talento precisa de acesso, não de adaptação forçada.</h1>
-<p>Conectamos você a empresas preparadas para contratar com estrutura e foco em trabalho remoto.</p>
-</header>
-
-<section>
-<div class="grid">
-
-<div class="card">
-<h3>Trabalho Remoto Real</h3>
-<p>Oportunidades estruturadas para quem precisa de flexibilidade e inclusão prática.</p>
+<nav>
+<div style="font-weight:600;">Conecta Inclusão</div>
+<div>
+<a href="index.html">Início</a>
+<a href="sobre.html">Sobre</a>
 </div>
+</nav>
 
-<div class="card">
-<h3>Empresas Alinhadas</h3>
-<p>Conectamos você a organizações que já estão preparadas para contratar com diversidade.</p>
-</div>
-
-<div class="card">
-<h3>Banco de Talentos Estratégico</h3>
-<p>Seu perfil será apresentado de forma organizada e estratégica às empresas.</p>
-</div>
-
-</div>
+<section class="hero">
+<h1>Talentos diversos merecem acesso estruturado às oportunidades.</h1>
+<p>
+O Conecta Inclusão conecta profissionais a empresas que buscam diversidade com organização, responsabilidade e visão estratégica.
+</p>
 </section>
 
-<section class="form-section">
+<section class="section">
+
+<h2>Como funciona para você</h2>
+
+<p>
+Nosso banco de talentos não é apenas um cadastro. Organizamos perfis de forma estratégica para apresentar profissionais a empresas alinhadas com inclusão estruturada.
+</p>
+
+<p>
+Trabalhamos com oportunidades presenciais, híbridas e remotas, sempre respeitando o perfil, a realidade e a qualificação do profissional.
+</p>
+
+<h2 style="margin-top:60px;">Por que isso é importante?</h2>
+
+<p>
+Muitos talentos encontram barreiras estruturais no mercado. A proposta do Conecta Inclusão é criar uma ponte organizada entre profissionais e empresas preparadas para contratar com responsabilidade.
+</p>
+
+<div class="form-area">
 <h2>Cadastre-se no Banco de Talentos</h2>
 
-<!-- COLE AQUI SEU IFRAME DO GOOGLE FORMS -->
+<!-- COLE AQUI O IFRAME DO SEU GOOGLE FORMS -->
+
+</div>
 
 </section>
 
-<a class="whatsapp" href="https://wa.me/55SEUNUMEROAQUI?text=Olá,%20sou%20profissional%20e%20quero%20informações." target="_blank">
+<a class="whatsapp" href="https://wa.me/55SEUNUMEROAQUI?text=Olá,%20sou%20profissional%20e%20gostaria%20de%20mais%20informações." target="_blank">
 WhatsApp
 </a>
 
