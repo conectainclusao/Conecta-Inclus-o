@@ -4,77 +4,97 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Conecta Inclusão | Empresas</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#f4f7fb;color:#1a1a1a}
 
-header{
-background:#0c1b2a;
-color:#fff;
-padding:80px 20px;
-text-align:center;
+body{
+font-family:'Inter',sans-serif;
+background:#0e1116;
+color:#eaeaea;
+line-height:1.7;
 }
 
-header h1{
-font-size:38px;
-margin-bottom:20px;
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(14,17,22,0.9);
+z-index:1000;
 }
 
-header p{
-font-size:18px;
-max-width:800px;
-margin:auto;
-color:#cfd8e3;
+nav a{
+color:#cfcfcf;
+text-decoration:none;
+margin-left:30px;
+font-size:14px;
+letter-spacing:1px;
+text-transform:uppercase;
 }
 
-section{
-padding:70px 20px;
-max-width:1100px;
-margin:auto;
+.hero{
+min-height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:140px 60px 80px 60px;
+background:linear-gradient(rgba(14,17,22,0.85),rgba(14,17,22,0.85)),
+url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+background-size:cover;
+background-position:center;
 }
 
-h2{
-color:#0c1b2a;
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:42px;
 margin-bottom:25px;
-font-size:28px;
+}
+
+.hero p{
+max-width:800px;
+font-size:18px;
+color:#c9c9c9;
+}
+
+.section{
+padding:100px 60px;
+background:#ffffff;
+color:#1a1a1a;
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:32px;
+margin-bottom:30px;
+}
+
+.section p{
+max-width:900px;
+margin-bottom:20px;
+font-size:17px;
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+gap:30px;
+margin-top:40px;
 }
 
 .card{
-background:#fff;
+background:#f4f6f9;
 padding:30px;
-border-radius:10px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
+border-radius:6px;
 }
 
 .card h3{
 margin-bottom:15px;
-color:#0c1b2a;
-}
-
-.cta{
-background:#0c1b2a;
-color:#fff;
-text-align:center;
-padding:60px 20px;
-}
-
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:15px 30px;
-background:#f37320;
-color:#fff;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
 }
 
 .whatsapp{
@@ -83,52 +103,75 @@ bottom:20px;
 right:20px;
 background:#25d366;
 color:#fff;
-padding:15px 20px;
+padding:14px 18px;
 border-radius:50px;
 text-decoration:none;
-font-weight:600;
-box-shadow:0 4px 15px rgba(0,0,0,0.3);
+font-size:14px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Transforme inclusão em vantagem competitiva.</h1>
-<p>Estruturamos diversidade com método, organização e foco em modelos de trabalho remoto e híbrido, gerando impacto ESG real.</p>
-</header>
+<nav>
+<div style="font-weight:600;">Conecta Inclusão</div>
+<div>
+<a href="index.html">Início</a>
+<a href="sobre.html">Sobre</a>
+</div>
+</nav>
 
-<section>
-<h2>Como atuamos</h2>
+<section class="hero">
+<h1>Consultoria estratégica em diversidade com impacto ESG real.</h1>
+<p>
+O Conecta Inclusão atua como parceiro estratégico de organizações que desejam estruturar diversidade e inclusão com método, governança e visão de longo prazo.
+</p>
+</section>
+
+<section class="section">
+
+<h2>O que fazemos na prática</h2>
+
+<p>
+A consultoria começa com uma análise da estrutura atual da empresa: cultura organizacional, modelo de contratação, desafios internos e objetivos estratégicos.
+</p>
+
+<p>
+A partir desse diagnóstico, desenvolvemos diretrizes claras para organizar políticas inclusivas, fortalecer governança e ampliar o acesso a talentos qualificados — sempre alinhados à realidade e ao porte da organização.
+</p>
 
 <div class="grid">
 
 <div class="card">
 <h3>Diagnóstico Estratégico</h3>
-<p>Analisamos sua estrutura, desafios de contratação e oportunidades de crescimento com diversidade organizada.</p>
+<p>Mapeamento da estrutura atual, riscos, oportunidades e alinhamento com princípios ESG.</p>
 </div>
 
 <div class="card">
-<h3>Modelo Remoto Inclusivo</h3>
-<p>Desenvolvemos estratégias para ampliar acesso a talentos através de trabalho remoto estruturado.</p>
+<h3>Plano de Estruturação</h3>
+<p>Definição de diretrizes práticas para implementação organizada de diversidade e inclusão.</p>
 </div>
 
 <div class="card">
 <h3>Conexão com Talentos</h3>
-<p>Apresentamos profissionais alinhados ao perfil da sua empresa, reduzindo risco e aumentando eficiência.</p>
+<p>Apresentação estratégica de profissionais alinhados ao perfil da empresa, incluindo modelos remotos e híbridos quando pertinentes.</p>
 </div>
 
 </div>
+
+<h2 style="margin-top:80px;">Por que isso é importante?</h2>
+
+<p>
+Diversidade improvisada gera desgaste, ruído interno e riscos reputacionais. Estrutura organizada gera crescimento sustentável, inovação e posicionamento institucional sólido.
+</p>
+
+<p>
+Empresas que estruturam inclusão com método fortalecem governança, ampliam competitividade e consolidam impacto ESG real.
+</p>
+
 </section>
 
-<section class="cta">
-<h2>Vamos estruturar sua estratégia de inclusão?</h2>
-<p>Agende uma conversa inicial para entender como aplicar isso na sua empresa.</p>
-<a href="https://wa.me/55SEUNUMEROAQUI?text=Olá,%20sou%20empresa%20e%20quero%20entender%20como%20funciona%20a%20consultoria." class="btn">Falar no WhatsApp</a>
-</section>
-
-<a class="whatsapp" href="https://wa.me/55SEUNUMEROAQUI?text=Olá,%20sou%20empresa%20e%20quero%20mais%20informações." target="_blank">
+<a class="whatsapp" href="https://wa.me/55SEUNUMEROAQUI?text=Olá,%20sou%20empresa%20e%20gostaria%20de%20mais%20informações." target="_blank">
 WhatsApp
 </a>
 
